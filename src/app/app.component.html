@@ -1,0 +1,62 @@
+<div class="back">
+  <div class="container">
+    <div class="row">
+      <div class="sticky-top">
+        <div class="header">
+          <blockquote class="blockquote">
+            <h3>The World Of Ice & Fire</h3></blockquote>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!--  <a class="navbar-brand" href="#">Navbar</a>-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" [routerLink] ="['/home']">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink] ="['/about-us']"> About Us</a>
+              </li>
+              <li class="nav-item"><!--
+          <a class="nav-link" href="#">Pricing</a>-->
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link disabled" routerLink="books">Disabled</a>-->
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container" id="ss" style="align-items:center" >
+        <router-outlet></router-outlet></div>
+    </div>
+  </div>
+
+  <footer class="footer-distributed">
+
+    <div class="footer-right">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+        <a href="#">Home</a>
+        <a [routerLink] ="['/about-us']">About</a>
+
+        <a href="#">Contact</a>
+      </p>
+
+      <p>Company Name &copy; 2018</p>
+    </div>
+
+  </footer>
+
+</div>

@@ -1,0 +1,83 @@
+
+    <div *ngIf="urlOfPage=='/books'">
+      <div class="card col-md-12" style="width: 100%;" *ngIf="resd1>0">
+              <div class="card-body">
+                <h5 class="card-title"><blockquote class="blockquote">
+                    <p class="mb-0">{{ret1.name}}</p>
+                    <footer class="blockquote-footer">Book by <cite title="Source Title">{{ret1.authors}}</cite></footer>
+                  </blockquote></h5>
+                <p class="card-text"></p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>ISBN</h5></div><div class="p-2 col-sm-4">:</div><div class="p-2 col-sm-4">{{ret1.isbn}}</div></div></li>
+                <li class="list-group-item"><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Author</h5></div><div class="p-2 col-sm-4">:</div><div class="p-2 col-sm-4">{{ret1.authors}}</div></div></li>
+                <li class="list-group-item"><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Pages</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret1.numberOfPages}}</div></div></li>
+                <li class="list-group-item"><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Publisher</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret1.publisher}}</div></div></li>
+                <li class="list-group-item"><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Country</h5> </div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret1.country}}</div></div></li>
+                <li class="list-group-item"><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Type</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret1.mediaType}}</div></div></li>
+                <li class="list-group-item"><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Released</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret1.released}}</div></div></li>
+                <li class="list-group-item"><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Characters Count</h5> </div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret1.characters.length}}</div></div></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div *ngIf="urlOfPage=='/houses'">
+            <div class="card col-md-12" style="width: 100%;" *ngIf="resd2>0">
+                    <div class="card-body">
+                      <h5 class="card-title"><blockquote class="blockquote">
+                          <p class="mb-0">{{ret2.name}}</p>
+                          <footer class="blockquote-footer"><cite title="Source Title">House</cite></footer>
+                        </blockquote></h5>
+                      <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Region</h5></div><div class="p-2 col-sm-4">:</div><div class="p-2 col-sm-4">{{ret2.region}}</div></div></li>
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Coat Of Arms</h5></div><div class="p-2 col-sm-4">:</div><div class="p-2 col-sm-4">{{ret2.coatOfArms}}</div></div></li>
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Words</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret2.words}}</div></div></li>
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Seats</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret2.seats}}</div></div></li>
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Current Lord </h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret2.currentLord}}</div></div></li>
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Titles</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret2.titles}}</div></div></li>
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Heir</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret2.heir}}</div></div></li>
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Died Out </h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret2.diedOut}}</div></div></li>
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Founded </h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret2.founded}}</div></div></li>
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Founder </h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret2.founder}}</div></div></li>
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Cadet Branches </h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret2.cadetBranches}}</div></div></li>
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Sworn Members </h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret2.swornMembers}}</div></div></li>
+                      <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Ancestral Weapons </h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret2.ancestralWeapons}}</div></div></li>
+                   
+                    </ul>
+                  </div>
+                </div>
+
+       <div *ngIf="urlOfPage=='/characters'">
+                  <div class="card col-md-12" style="width: 100%;" *ngIf="resd3>0">
+                          <div class="card-body">
+                            <h5 class="card-title"><blockquote class="blockquote">
+                                <p class="mb-0">{{ret3.aliases}}</p>
+                                <footer class="blockquote-footer"><cite title="Source Title">Character</cite></footer>
+                              </blockquote></h5>
+                            <p class="card-text"></p>
+                          </div>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Gender</h5></div><div class="p-2 col-sm-4">:</div><div class="p-2 col-sm-4">{{ret3.gender}}</div></div></li>
+                            <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Culture</h5></div><div class="p-2 col-sm-4">:</div><div class="p-2 col-sm-4">{{ret3.culture}}</div></div></li>
+                            <li class="list-group-item"><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Born</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret3.born}}</div></div></li>
+                            <li class="list-group-item"><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Died</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret3.died}}</div></div></li>
+                            <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Titles</h5> </div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret3.titles}}</div></div></li>
+                            <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Aliases</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret3.aliases}}</div></div></li>
+                            <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Father</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret3.father}}</div></div></li>
+                            <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Mother</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret3.mother}}</div></div></li>
+                            <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Spouse</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret3.spouse}}</div></div></li>
+                            <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Allegiances</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret3.allegiances}}</div></div></li>
+                            <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Books</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret3.books}}</div></div></li>
+                            <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>TV Series</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret3.tvSeries}}</div></div></li>
+                            <li class="list-group-item" ><div class="d-flex d-flex justify-content-start flex-wrap"><div class="p-2 col-sm-4"><h5>Played By</h5></div><div class="p-2 col-sm-4" >:</div><div class="p-2 col-sm-4">{{ret3.playedBy}}</div></div></li>
+                            
+                          </ul>
+                        </div>
+                      </div>
+            
+
+

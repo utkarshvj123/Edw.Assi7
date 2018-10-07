@@ -1,0 +1,25 @@
+<div class="container">
+<div class="row" style="text-align:center" >
+    <div class="col-md-4" *ngFor="let b of res11; let i = index" style="align-items:center">
+    <div *ngIf="i<10">
+       <a id="linking" [routerLink]="['/books']" (click)=passIndexValue(i)><div class="card border-success mb-3"  style="max-width: 18rem;">
+          <div class="card-body">
+          <h5 class="card-title" style="color: green">{{b}}</h5>
+      </div>
+    </div></a></div>
+      <div *ngIf="i>9 && i<20">
+          <a id="linking"  [routerLink]="['/houses']" (click)=passIndexValue(i-10)><div class="card border-danger mb-3"  style="max-width: 18rem;">
+             <div class="card-body">
+             <h5 class="card-title" style="color:red">{{b}}</h5>
+         </div>
+       </div></a></div>
+         <div *ngIf="i>19 && i<30">
+            <a id="linking" [routerLink]="['/characters']" (click)=passIndexValue(i-20)><div class="card border-info mb-3"  style="max-width: 18rem;">
+               <div class="card-body">
+               <h5 class="card-title">{{b}}</h5>
+           </div>
+         </div></a></div><br/>
+           </div></div>
+  </div>
+           
+  
